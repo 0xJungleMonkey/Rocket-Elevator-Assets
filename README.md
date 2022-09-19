@@ -1,2 +1,2 @@
-# Rocket-Elevator-Assets
-Week1 project
+# GenesisProgram
+Repository holding the template to be used and edited for the Genesis Website
