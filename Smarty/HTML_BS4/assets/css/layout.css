@@ -1351,7 +1351,7 @@ section.dark.page-header ul.page-options a {
 
 /* centered navigation */
 #header .navbar-collapse.navbar-centered {
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     text-align: center;
