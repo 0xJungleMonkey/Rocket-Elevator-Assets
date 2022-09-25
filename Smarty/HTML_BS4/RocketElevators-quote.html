@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Rocket Elevators Quote</title>
+		<meta name="description" content="" />
+		<!-- <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" /> -->
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+		<!-- WEB FONTS : use %7C instead of | (pipe) -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" /> -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" /> 
+
+		<!-- PAGE LEVEL SCRIPTS -->
+		 <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" /> 
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+		<script src="rocketelevatorsquote.js"></script>
+	</head>
+
+	<!--
+		AVAILABLE BODY CLASSES:
+		
+		smoothscroll 			= create a browser smooth scroll
+		enable-animation		= enable WOW animations
+
+		bg-grey					= grey background
+		grain-grey				= grey grain background
+		grain-blue				= blue grain background
+		grain-green				= green grain background
+		grain-blue				= blue grain background
+		grain-orange			= orange grain background
+		grain-yellow			= yellow grain background
+		
+		boxed 					= boxed layout
+		pattern1 ... patern11	= pattern background
+		menu-vertical-hide		= hidden, open on click
+		
+		BACKGROUND IMAGE [together with .boxed class]
+		data-background="assets/images/_smarty/boxed_background/1.jpg"
+	-->
+	<body class="smoothscroll enable-animation">
+
+		<!-- wrapper -->
+		<div id="wrapper">
+
+			<!-- 
+				AVAILABLE HEADER CLASSES
+
+				Default nav height: 96px
+				.header-md 		= 70px nav height
+				.header-sm 		= 60px nav height
+
+				.b-0 		= remove bottom border (only with transparent use)
+				.transparent	= transparent header
+				.translucent	= translucent header
+				.sticky			= sticky header
+				.static			= static header
+				.dark			= dark header
+				.bottom			= header on bottom
+				
+				shadow-before-1 = shadow 1 header top
+				shadow-after-1 	= shadow 1 header bottom
+				shadow-before-2 = shadow 2 header top
+				shadow-after-2 	= shadow 2 header bottom
+				shadow-before-3 = shadow 3 header top
+				shadow-after-3 	= shadow 3 header bottom
+
+				.clearfix		= required for mobile menu, do not remove!
+
+				Example Usage:  class="clearfix sticky header-sm transparent b-0"
+			-->
+			<div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+
+				<!-- TOP NAV -->
+				<header id="topNav">
+					<div class="container">
+
+						<!-- Mobile Menu Button -->
+						<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+
+						<!-- Logo -->
+						<a class="logo float-left scrollTo" href="#top">
+							<img src="assets/images/rocketelevators/R2.png" alt="" />
+						</a>
+
+						<!-- 
+							Top Nav 
+							
+							AVAILABLE CLASSES:
+							submenu-dark = dark sub menu
+						-->
+						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+							<nav class="nav-main">
+
+								<!-- 
+									.nav-onepage
+									Required for onepage navigation links
+									
+									Add .external for an external link!
+								-->
+								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+									<li class="active"><!-- HOME -->
+										<a href="RocketElevators-HomePage.html">
+											HOME
+										</a>
+									</li>
+									<li><!-- SERVICES -->
+										<a href="RocketElevators-HomePage.html#services">
+											SERVICES
+										</a>
+									</li>
+									<li><!-- WORK -->
+										<a href="RocketElevators-HomePage.html#portfolio">
+											PORTFOLIO
+										</a>
+									</li>
+									<li><!-- NEWS -->
+										<a href="RocketElevators-HomePage.html#news">
+											NEWS
+										</a>
+									</li>
+									
+									<li><!-- CLIENTS -->
+										<a href="RocketElevators-HomePage.html#clients">
+											CLIENTS
+										</a>
+									</li>
+									
+									<li><!-- CONTACT -->
+										<a href="RocketElevators-HomePage.html#contact">
+											CONTACT
+										</a>
+									</li>
+								</ul>
+
+							</nav>
+						</div>
+
+					</div>
+				</header>
+				<!-- /Top Nav -->
+
+			</div>
+			<!--form-->
+			
+				  <div class="btn-group" role="group" >
+					<button type="button" class="btn btn-primary">Residential</button>
+					<button type="button" class="btn btn-primary">Commercial</button>
+					<button type="button" class="btn btn-primary">Corporate</button>
+					<button type="button" class="btn btn-primary">Hybrid</button>
+				  </div>
+			
+				  <!-- residential -->
+			<form>
+					
+				<div class="mb-3">
+				  <label for="residentialapartment" class="form-label">The number of apartments in the building</label>
+				  <input type="number" class="form-control" id="residentialapartment" >
+				</div>
+				<div class="mb-3">
+					<label for="residentialfloors" class="form-label">The number of floors contained in the building, excluding basements</label>
+					<input type="number" class="form-control" id="residentialfloors" >
+				  </div>
+				  <div class="mb-3">
+					<label for="residentialbasement" class="form-label">The number of basements contained in the building
+					</label>
+					<input type="number" class="form-control" id="residentialbasement" >
+				  </div>
+				  
+				  <button type="button" class="btn btn-primary" id="residentialsubmit" onclick='residentialFunction()'>Submit</button>
+				  
+				 
+				  
+					<!-- commmercial -->
+				  <div class="mb-3">
+					<label for="distinct" class="form-label">The number of distinct businesses
+					</label>
+					<input type="number" class="form-control" id="distinct" >
+				  </div>
+				  <div class="mb-3">
+					<label for="commmercialfloors" class="form-label">The number of floors contained in the building, excluding basements
+					</label>
+					<input type="number" class="form-control" id="commmercialfloors" >
+				  </div><div class="mb-3">
+					<label for="commmercialbasement" class="form-label">The number of basements contained in the building
+					</label>
+					
+					<input type="number" class="form-control" id="commmercialbasement" >
+				  </div>
+				  <div class="mb-3">
+					<label for="commmercialparking" class="form-label">The number of parking space available
+
+					</label>
+					<input type="number" class="form-control" id="commmercialparking" >
+				  </div>
+				  <div class="mb-3">
+					<label for="cages" class="form-label">The number of elevator cages to be deployed
+
+
+					</label>
+					<input type="number" class="form-control" id="cages" >
+				  </div>
+				  <button type="button" class="btn btn-primary" id="commercialsubmit" onclick='commercialFunction()'>Submit</button>
+
+					<!-- cooperate -->
+					<div class="mb-3">
+					<label for="cooperatetenant" class="form-label">The number of separate tenant companies
+
+					</label>
+					<input type="number" class="form-control" id="cooperatetenant" >
+				  </div><div class="mb-3">
+					<label for="cooperatefloors" class="form-label">The number of floors contained in the building, excluding basements
+					</label>
+					<input type="number" class="form-control" id="cooperatefloors" >
+				  </div><div class="mb-3">
+					<label for="cooperatebasement" class="form-label">The number of basements contained in the building
+					</label>
+					<input type="number" class="form-control" id="cooperatebasement" >
+				  </div><div class="mb-3">
+					<label for="cooperateparking" class="form-label">The number of parking spaces available
+					</label>
+					<input type="number" class="form-control" id="cooperateparking" >
+				  </div>
+				  <div class="mb-3">
+					<label for="cooperateoccupants" class="form-label">The maximum number of occupants per floor
+					</label>
+					<input type="number" class="form-control" id="cooperateoccupants" >
+				  </div>
+				  <button type="button" class="btn btn-primary" id="cooperatesubmit" onclick='cooperateFunction()'>Submit</button>
+
+				  <!-- hybrid -->
+				  <div class="mb-3">
+					<label for="hybriddistinct" class="form-label">The number of distinct businesses
+						
+					</label>
+					<input type="number" class="form-control" id="hybriddistinct" >
+				  </div>
+				  <div class="mb-3">
+					<label for="hybridfloors" class="form-label">The number of floors contained in the building, excluding basements
+						
+					</label>
+					<input type="number" class="form-control" id="hybridfloors" >
+				  </div>
+				  <div class="mb-3">
+					<label for="hybridbasement" class="form-label">The number of basements contained in the building
+						
+					</label>
+					<input type="number" class="form-control" id="hybridbasement" >
+				  </div>
+				  <div class="mb-3">
+					<label for="hybridparking" class="form-label">The number of parking spaces available
+					</label>	
+					<input type="number" class="form-control" id="hybridparking" >
+				  </div>
+				  <div class="mb-3">
+					<label for="hybridoccupants" class="form-label">The maximum number of occupants per floor
+					</label>
+					<input type="number" class="form-control" id="hybridoccupants" >
+				  </div>
+				  <div class="mb-3">
+					<label for="hybridhours" class="form-label">The number of hours of activity of the building (the maximum being 24)
+					</label>
+					<input type="number" class="form-control" id="hybridhours" >
+				  </div>
+				<button type="submit" class="btn btn-primary" id="hybridsubmit" onclick="hybridFunction">Submit</button>
+			</fieldset> 
+			
+			
+			
+			
+			<!-- <fieldset id="result">
+				
+				<textarea id="amont">
+			The amount of elevators needed:</textarea>
+			<textarea id="">The unit price of each elevator</textarea>
+			<textarea id="">The total price of the elevators</textarea> 
+			<textarea id="">The installation fees</textarea>
+			<textarea id="">The final price, combining the price of the elevators and the installation fees</textarea>
+		</fieldset> -->
+		</form>
+		<table>
+			<tr>
+			  <th>The amount of elevators needed</th>
+			  <td id="amount">   </td>
+			  
+			 
+			</tr>
+			<tr>
+				<th>The unit price of each elevator</th>
+				<td>  <br>  </td>
+			  
+			 
+			</tr>
+			<tr>
+			<th>The total price of the elevators</th>
+			<td>  <br>  </td>
+			</tr>
+			<tr>
+				<th>The installation fees</th>
+				<td>  <br>  </td>
+			 
+			</tr>
+			<tr>
+			<th>The final price, combining the price of the elevators and the installation fees </th>
+			<td>  89<br>  </td>
+		</tr>  
+		</table>
+			
+			
+			<!-- FOOTER -->
+			<footer id="footer">
+				<div class="container">
+
+
+					<div class="row">
+
+						<!-- col #1 -->
+						<div class="col-md-8">
+
+							<h3 class="letter-spacing-1">WHY US? Rocket Elevators!</h3>
+
+							<!-- Small Description -->
+							<p>
+								We offer you most trustworthy and affordable elevator services.
+							</p>
+							<h2>(800) 123-4567</h2>
+						</div>
+						<!-- /col #1 -->
+
+						<!-- col #2 -->
+						<div class="col-md-4">
+							<h3 class="letter-spacing-1">KEEP IN TOUCH</h3>
+
+							<!-- Newsletter Form -->
+							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
+
+							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
+									<span class="input-group-btn">
+										<button class="btn btn-primary" type="submit">Subscribe</button>
+									</span>
+								</div>
+							</form>
+							<!-- /Newsletter Form -->
+
+
+						</div>
+						<!-- /col #2 -->
+
+					</div>
+
+
+				</div>
+
+				<div class="copyright">
+					<div class="container">
+						<ul class="float-right m-0 list-inline mobile-block">
+							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>&bull;</li>
+							<li><a href="#">Privacy</a></li>
+						</ul>
+						&copy; All Rights Reserved, Rocket Elevators Company LTD
+					</div>
+				</div>
+
+			</footer>
+			<!-- /FOOTER -->
+
+		</div>
+		<!-- /wrapper -->
+
+
+		<!-- SCROLL TO TOP -->
+		<a href="#" id="toTop"></a>
+
+
+		<!-- PRELOADER -->
+		<div id="preloader">
+			<div class="inner">
+				<span class="loader"></span>
+			</div>
+		</div><!-- /PRELOADER -->
+
+
+		<!-- JAVASCRIPT FILES -->
+		<script>var plugin_path = 'assets/plugins/';</script>
+		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
+
+		<script src="assets/js/scripts.js"></script>
+		
+		<!-- STYLESWITCHER - REMOVE -->
+		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
+	</body>
+</html>
