@@ -1,59 +1,104 @@
+//input constiables
+/////////////////////////////////////////////////////////////////
+const residentialapartment =document.getElementById("residentialapartment")
+const residentialfloors =document.getElementById("residentialfloors")
+const residentialbasement =document.getElementById("residentialbasement")
+const residentialsubmit = document.getElementById("residentialsubmit")
+const residential = document.getElementById("residential")
+const commercial = document.getElementById("commercial")
+const cooperate = document.getElementById("cooperate")
+const hybrid = document.getElementById("hybrid")
+const hint=document.getElementById("hint")
+//output constiables
+/////////////////////////////////////////////////////////////////
+const amount = document.getElementById("amount")
+const unitprice = document.getElementById("unitprice")
+const totalprice = document.getElementById("totalprice")
+const installation = document.getElementById("installation")
+const finalprice = document.getElementById("finalprice")
 
-function residentialFunction() {
-    var residentialapartment =Number( document.getElementById("residentialapartment").value)
-    var residentialfloors =Number( document.getElementById("residentialfloors").value)
-    var residentialbasement =Number( document.getElementById("residentialbasement").value)
-    if (residentialfloors > 20){
-        amount = residentialapartment / residentialfloors /6*2
+residential.addEventListener('click',() =>  {
+    hint.style.display ="block"
+    resi.style.display = 'block'
+    commer.style.display = 'none'
+    coop.style.display = 'none'
+    hy.style.display = 'none'
+})
+commercial.addEventListener('click',() =>  {
+    hint.style.display ="block"
+    resi.style.display = 'none'
+    commer.style.display = 'block'
+    coop.style.display = 'none'
+    hy.style.display = 'none'
+})
+cooperate.addEventListener('click',() =>  {
+    hint.style.display ="block"
+    resi.style.display = 'none'
+    commer.style.display = 'none'
+    coop.style.display = 'block'
+    hy.style.display = 'none'
+})
+hybrid.addEventListener('click',() =>  {
+    hint.style.display ="block"
+    resi.style.display = 'none'
+    commer.style.display = 'none'
+    coop.style.display = 'none'
+    hy.style.display = 'block'
+})
+
+
+
+
+residentialsubmit.addEventListener('click',() => {
+    
+    if (residentialfloors.value > 20){
+       amount.value = Number(residentialapartment.value) / Number(residentialfloors.value) /6*2
     }else{
-        amount = residentialapartment / residentialfloors /6
-    }
-    
-    document.getElementById("amount").innerHTML = amount
-    document.getElementById("unitprice").innerHTML =  unitprice
-    document.getElementById("totalprice").innerHTML =  totalprice
-    document.getElementById("installation").innerHTML = installation
-    document.getElementById("finalprice").innerHTML = finalprice
-    
+        amount.value = Number(residentialapartment.value)/ Number(residentialfloors.value) /6
+    }  
+})
+
+const distinct = document.getElementById("distinct")
+const commmercialfloors = document.getElementById("commmercialfloors")
+const commmercialbasement = document.getElementById("commmercialbasement")
+const commmercialparking = document.getElementById("commmercialparking")
+const cages = document.getElementById("cages")
+const commercialsubmit = document.getElementById("commercialsubmit")
+commercialsubmit.addEventListener('click',() => {
+    amount.value = cages.value 
+})
+const cooperatetenant = document.getElementById("cooperatetenant")
+const cooperatefloors = document.getElementById("cooperatefloors")
+const cooperatebasement= document.getElementById("cooperatebasement")
+const cooperateparking = document.getElementById("cooperateparking")
+const cooperateoccupants = document.getElementById("cooperateoccupants")
+const cooperatesubmit = document.getElementById("cooperatesubmit")
+
+cooperatesubmit.addEventListener('click',() => {
+    amount.value = Number(cooperateoccupants.value)*(Number(cooperatefloors.value)+Number(cooperatebasement.value))/1000
+})
+
+const hybriddistinct = Number(document.getElementById("hybriddistinct").value)
+const hybridfloors = Number(document.getElementById("hybridfloors").value)
+const hybridbasement = Number(document.getElementById("hybridbasement").value)
+const hybridparking = Number(document.getElementById("hybridparking").value)
+const hybridoccupants = Number(document.getElementById("hybridoccupants").value)
+const hybridhours = Number(document.getElementById("hybridhours").value)
+const hybridsubmit = document.getElementById("hybridsubmit")
+
+hybridsubmit.addEventListener('click',() => {
+    amount.value = Number(hybridoccupants.value)*(Number(hybridfloors.value)+Number(hybridbasement.value))/1000
+})
+
+
+
+
+function funcPrice(product,installrate){
+    unitprice.value = product
+    totalprice.value =  Number(unitprice.value)*Number(amount.value)
+    installation.value = (Number(product)*Number(installrate))*Number(amount.value)
+    finalprice.value = Number(totalprice.value) + Number(installation.value)
+    // document.getElementById("installation").innerHTML = unitinstallation*amount
+    // document.getElementById("finalprice").innerHTML = (unitprice + unitinstallation) * amount
 }
 
-function commercialFunction() {
-    var distinct = Number(document.getElementById("distinct").value)
-    var commmercialfloors = Number(document.getElementById("commmercialfloors").value)
-    var commmercialbasement = Number(document.getElementById("commmercialbasement").value)
-    var commmercialparking = Number(document.getElementById("commmercialparking").value)
-   amount = Number(document.getElementById("cages").value)
-      
-    document.getElementById("amount").innerHTML = amount
-    document.getElementById("unitprice").innerHTML =  unitprice
-    document.getElementById("totalprice").innerHTML =  totalprice
-    document.getElementById("installation").innerHTML = installation
-    document.getElementById("finalprice").innerHTML = finalprice
-}
-function cooperateFunction(){
-    var cooperatetenant = Number(document.getElementById("cooperatetenant").value)
-    var cooperatefloors = Number(document.getElementById("cooperatefloors").value)
-    var cooperatebasement= Number(document.getElementById("cooperatebasement").value)
-    var cooperateparking = Number(document.getElementById("cooperateparking").value)
-    var cooperateoccupants = Number(document.getElementById("cooperateoccupants").value)
-    
-
-    document.getElementById("amount").innerHTML = cooperateoccupants*(cooperatefloors+cooperatebasement)/1000
-    document.getElementById("unitprice").innerHTML =  unitprice
-    document.getElementById("totalprice").innerHTML =  totalprice
-    document.getElementById("installation").innerHTML = installation
-    document.getElementById("finalprice").innerHTML = finalprice
-}
-function hybrid(){
-    var hybriddistinct = Number(document.getElementById("hybriddistinct").value)
-    var hybridfloors = Number(document.getElementById("hybridfloors").value)
-    var hybridbasement = Number(document.getElementById("hybridbasement").value)
-    var hybridparking = Number(document.getElementById("hybridparking").value)
-    var hybridoccupants = Number(document.getElementById("hybridoccupants").value)
-    var hybridhours = Number(document.getElementById("hybridhours").value)
-    document.getElementById("amount").innerHTML = hybridoccupants*( hybridfloors+hybridbasement)/1000
-    document.getElementById("unitprice").innerHTML =  unitprice
-    document.getElementById("totalprice").innerHTML =  totalprice
-    document.getElementById("installation").innerHTML = installation
-    document.getElementById("finalprice").innerHTML = finalprice
-}
