@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Rocket Elevators Quote</title>
-    <meta name="description" content="" />
-    <!-- <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" /> -->
 
-    <!-- mobile settings -->
-    <meta
-      name="viewport"
-      content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0"
-    />
-    <!--[if IE
+<head>
+  <meta charset="utf-8" />
+  <title>Rocket Elevators Quote</title>
+  <meta name="description" content="" />
+  <!-- <meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" /> -->
+
+  <!-- mobile settings -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  <!--[if IE
       ]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
     /><![endif]-->
 
-    <!-- WEB FONTS : use %7C instead of | (pipe) -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" /> -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
+  <!-- WEB FONTS : use %7C instead of | (pipe) -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CRaleway:300,400,500,600,700%7CLato:300,400,400italic,600,700" rel="stylesheet" type="text/css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
 
-    <!-- CORE CSS -->
-    <link
-      href="assets/plugins/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+  <!-- CORE CSS -->
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-    <!-- THEME CSS -->
-    <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
-    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+  <!-- THEME CSS -->
+  <link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
 
-    <!-- PAGE LEVEL SCRIPTS -->
-    <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
-    <link
-      href="assets/css/color_scheme/blue.css"
-      rel="stylesheet"
-      type="text/css"
-      id="color_scheme"
-    />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
-  </head>
+  <!-- PAGE LEVEL SCRIPTS -->
+  <link href="quote.css"type="text/css" />
+  <link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
+  <link href="assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> -->
+</head>
 
-  <!--
+<!--
 		AVAILABLE BODY CLASSES:
 		
 		smoothscroll 			= create a browser smooth scroll
@@ -67,10 +53,11 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/_smarty/boxed_background/1.jpg"
 	-->
-  <body class="smoothscroll enable-animation">
-    <!-- wrapper -->
-    <div id="wrapper">
-      <!-- 
+
+<body class="smoothscroll enable-animation">
+  <!-- wrapper -->
+  <div id="wrapper">
+    <!-- 
 				AVAILABLE HEADER CLASSES
 
 				Default nav height: 96px
@@ -96,463 +83,456 @@
 
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
-      <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
-        <!-- TOP NAV -->
-        <header id="topNav">
-          <div class="container">
-            <!-- Mobile Menu Button -->
-            <button
-              class="btn btn-mobile"
-              data-toggle="collapse"
-              data-target=".nav-main-collapse"
-            >
-              <i class="fa fa-bars"></i>
-            </button>
+    <div id="header" class="navbar-toggleable-md sticky header-md clearfix">
+      <!-- TOP NAV -->
+      <header id="topNav">
+        <div class="container">
+          <!-- Mobile Menu Button -->
+          <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
 
-            <!-- Logo -->
-            <a class="logo float-left scrollTo" href="#top">
-              <img src="assets/images/rocketelevators/R2.png" alt="" />
-            </a>
+          <!-- Logo -->
+          <a class="logo float-left scrollTo" href="#top">
+            <img src="assets/images/rocketelevators/R2.png" alt="" />
+          </a>
 
-            <!-- 
+          <!-- 
 							Top Nav 
 							
 							AVAILABLE CLASSES:
 							submenu-dark = dark sub menu
 						-->
-            <div
-              class="navbar-collapse collapse float-right nav-main-collapse submenu-dark"
-            >
-              <nav class="nav-main">
-                <!-- 
+          <div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
+            <nav class="nav-main">
+              <!-- 
 									.nav-onepage
 									Required for onepage navigation links
 									
 									Add .external for an external link!
 								-->
-                <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-                  <li class="active">
-                    <!-- HOME -->
-                    <a href="RocketElevators-HomePage.html">
-                      HOME
-                    </a>
-                  </li>
-                  <li>
-                    <!-- SERVICES -->
-                    <a href="RocketElevators-HomePage.html#services">
-                      SERVICES
-                    </a>
-                  </li>
-                  <li>
-                    <!-- WORK -->
-                    <a href="RocketElevators-HomePage.html#portfolio">
-                      PORTFOLIO
-                    </a>
-                  </li>
-                  <li>
-                    <!-- NEWS -->
-                    <a href="RocketElevators-HomePage.html#news">
-                      NEWS
-                    </a>
-                  </li>
+              <ul id="topMain" class="nav nav-pills nav-main nav-onepage">
+                <li class="active">
+                  <!-- HOME -->
+                  <a href="RocketElevators-HomePage.html">
+                    HOME
+                  </a>
+                </li>
+                <li>
+                  <!-- SERVICES -->
+                  <a href="RocketElevators-HomePage.html#services">
+                    SERVICES
+                  </a>
+                </li>
+                <li>
+                  <!-- WORK -->
+                  <a href="RocketElevators-HomePage.html#portfolio">
+                    PORTFOLIO
+                  </a>
+                </li>
+                <li>
+                  <!-- NEWS -->
+                  <a href="RocketElevators-HomePage.html#news">
+                    NEWS
+                  </a>
+                </li>
 
-                  <li>
-                    <!-- CLIENTS -->
-                    <a href="RocketElevators-HomePage.html#clients">
-                      CLIENTS
-                    </a>
-                  </li>
+                <li>
+                  <!-- CLIENTS -->
+                  <a href="RocketElevators-HomePage.html#clients">
+                    CLIENTS
+                  </a>
+                </li>
 
-                  <li>
-                    <!-- CONTACT -->
-                    <a href="RocketElevators-HomePage.html#contact">
-                      CONTACT
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+                <li>
+                  <!-- CONTACT -->
+                  <a href="RocketElevators-HomePage.html#contact">
+                    CONTACT
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </header>
-        <!-- /Top Nav -->
-      </div>
-      <div style="height: 20vh;">
-        <h1 style="text-align: center; margin: auto;"><br />GET QOUTE</h1>
-        <p style="text-align: center; margin: auto; width: 100%;">
-          You may follow the questions to get your own cutomized quote in
-          senconds.
-        </p>
-      </div>
-      <!--form-->
-      <h2 class="container col-md-4">Please select your project type:</h2>
-      <div class="container col-md-4" role="group">
-        <div class="row">
-          <button
-            type="button"
-            class="btn btn-primary"
-            id="residential"
-            class="col-md-3 mb-10"
-            style="
+        </div>
+      </header>
+      <!-- /Top Nav -->
+    </div>
+
+    <div class="container col-md-4 text-center" >
+      <h2 class="mt-30 mb-0" >ROCKET ELEVATORS QOUTE</h2>
+      <p class="mb-30">Follow the questions to get your own cutomized quote in
+        senconds.
+      </p>
+    </div>
+    <!--form-->
+   
+      <h3 class="container col-md-4 text-center mt-30 mb-10">1 - Information about your project</h4>
+       <!-- <div class="container col-md-4 text-center ">
+         <div class="row mt-10 mb-30">
+        <div role="group" class="d-grid gap-2 col-6 mx-auto">  -->
+          <!-- <h3>Please select your project type:</h3> -->
+          <!-- <button type="button" class="btn btn-primary btn-lg" id="residential"  style="
               text-align: center;
-              width: 15vw;
-              margin: auto;
-              font-size: x-large;
-              height: 10vh;
-            "
-          >
+              font-size: large;
+              
+            ">
             Residential
           </button>
-          <button
-            type="button"
-            class="btn btn-primary"
-            id="commercial"
-            class="col-md-3 mb-10"
-            style="
+          <button type="button" class="btn btn-primary btn-lg" id="commercial" style="
               text-align: center;
-              width: 15vw;
-              margin: auto;
-              font-size: x-large;
-              height: 10vh;
-            "
-          >
+              font-size: large;
+              
+            ">
             Commercial
           </button>
 
-          <button
-            type="button"
-            class="btn btn-primary"
-            id="cooperate"
-            class="col-md-3 mb-10"
-            style="
+          <button type="button" class="btn btn-primary btn-lg" id="cooperate" style="
               text-align: center;
-              width: 15vw;
-              margin: auto;
-              font-size: x-large;
-              height: 10vh;
-            "
-          >
+              font-size: large;
+             
+            ">
             Corporate
           </button>
-          <button
-            type="button"
-            class="btn btn-primary"
-            id="hybrid"
-            class="col-md-3 mb-10"
-            style="
-              text-align: center;
-              width: 15vw;
-              margin: auto;
-              font-size: x-large;
-              height: 10vh;
-            "
-          >
+          <button type="button" class="btn btn-primary btn-lg" id="hybrid" style="
+             text-align: center;
+              font-size: large;
+              
+            ">
             Hybrid
           </button>
+          
         </div>
+        
+      </div> -->
+      <div class="container col-md-4 text-center">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary ml-3 mr-3" id="residential">Residential</button>
+        <button type="button" class="btn btn-primary ml-3 mr-3"  id="commercial">Commercial</button>
+        <button type="button" class="btn btn-primary ml-3 mr-3" id="cooperate">Corporate</button>
+        <button type="button" class="btn btn-primary ml-3 mr-3" id="hybrid">Hybrid</button>
+
       </div>
-      <h2 class="container col-md-4" id="hint" style="display: none;">
+    
+     <div class="mb-30 mt-30"></div>
+      <!-- <div class="btn-group mt-0" role="group">
+        <button type="button" class="btn btn-primary ">Residential</button>
+        <button type="button" class="btn btn-primary ">Commercial</button>
+        <button type="button" class="btn btn-primary ">Corporate</button>
+        <button type="button" class="btn btn-primary ">Hybrid</button>
+
+      </div> -->
+      </div>
+      <div class="row">
+      <label class="container col-md-4" id="hint" style="display: none;">
         Please text in your project detail:
-      </h2>
+      </label>
+    </div>
       <!-- residential -->
-      <form>
-        <div id="resi" style="display: none;" class="container col-md-4">
-          <div class="mb-3">
-            <label for="residentialapartment" class="form-label"
-              >The number of apartments in the building</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              id="residentialapartment"
-            />
+      
+      <div class="row">
+        <div class="container col-md-4" id="resi" style="display: none;" >
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">The number of apartments in the building:<br></span>
+            </div>
+            <!-- <label for="residentialapartment" class="form-label">The number of apartments in the building</label> -->
+            <input type="number" class="form-control" id="residentialapartment" />
           </div>
-          <div class="mb-3">
-            <label for="residentialfloors" class="form-label"
-              >The number of floors contained in the building, excluding
-              basements</label
-            >
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">The number of floors contained in the building,
+                excluding
+                basements:<br></span>
+            </div>
+            <!-- <label for="residentialfloors" class="form-label">The number of floors contained in the building,
+              excluding
+              basements</label> -->
             <input type="number" class="form-control" id="residentialfloors" />
           </div>
-          <div class="mb-3">
-            <label for="residentialbasement" class="form-label"
-              >The number of basements contained in the building
-            </label>
-            <input
-              type="number"
-              class="form-control"
-              id="residentialbasement"
-            />
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of basements contained in the building:</span>
+            </div>
+            <!-- <label for="residentialbasement" class="form-label">The number of basements contained in the building
+            </label> -->
+            <input type="number" class="form-control" id="residentialbasement" />
           </div>
+          <div class="col text-center">
 
-          <button type="button" class="btn btn-primary" id="residentialsubmit">
+          <button type="button" class="btn btn-primary " id="residentialsubmit">
             Submit
           </button>
         </div>
-
+        </div>
+      </div>
+      
         <!-- commmercial -->
+        <div class="row">
+       
         <div id="commer" style="display: none;" class="container col-md-4">
-          <div class="mb-3">
-            <label for="distinct" class="form-label"
-              >The number of distinct businesses
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of distinct businesses:</span>
+            </div>
             <input type="number" class="form-control" id="distinct" />
           </div>
-          <div class="mb-3">
-            <label for="commmercialfloors" class="form-label"
-              >The number of floors contained in the building, excluding
-              basements
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of floors contained in the building,
+                excluding
+                basements:</span>
+          </div>
             <input type="number" class="form-control" id="commmercialfloors" />
           </div>
-          <div class="mb-3">
-            <label for="commmercialbasement" class="form-label"
-              >The number of basements contained in the building
-            </label>
-
-            <input
-              type="number"
-              class="form-control"
-              id="commmercialbasement"
-            />
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of basements contained in the building:</span>
           </div>
-          <div class="mb-3">
-            <label for="commmercialparking" class="form-label"
-              >The number of parking space available
-            </label>
+            <input type="number" class="form-control" id="commmercialbasement" />
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of parking space available:</span>
+          </div>
             <input type="number" class="form-control" id="commmercialparking" />
           </div>
-          <div class="mb-3">
-            <label for="cages" class="form-label"
-              >The number of elevator cages to be deployed
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of elevator cages to be deployed:</span>
+          </div>
             <input type="number" class="form-control" id="cages" />
           </div>
           <button type="button" class="btn btn-primary" id="commercialsubmit">
             Submit
           </button>
         </div>
-
+      </div>
         <!-- cooperate -->
+        <div class="row">
+        
         <div id="coop" style="display: none;" class="container col-md-4">
-          <div class="mb-3">
-            <label for="cooperatetenant" class="form-label"
-              >The number of separate tenant companies
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of separate tenant companies:</span>
+          </div>
             <input type="number" class="form-control" id="cooperatetenant" />
           </div>
-          <div class="mb-3">
-            <label for="cooperatefloors" class="form-label"
-              >The number of floors contained in the building, excluding
-              basements
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of floors contained in the building, excluding
+                basements:</span>
+          </div>
+           
             <input type="number" class="form-control" id="cooperatefloors" />
           </div>
-          <div class="mb-3">
-            <label for="cooperatebasement" class="form-label"
-              >The number of basements contained in the building
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of basements contained in the building:</span>
+          </div>
+           
             <input type="number" class="form-control" id="cooperatebasement" />
           </div>
-          <div class="mb-3">
-            <label for="cooperateparking" class="form-label"
-              >The number of parking spaces available
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of parking spaces available:</span>
+          </div>
+            
             <input type="number" class="form-control" id="cooperateparking" />
           </div>
-          <div class="mb-3">
-            <label for="cooperateoccupants" class="form-label"
-              >The maximum number of occupants per floor
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The maximum number of occupants per floor:</span>
+          </div>
             <input type="number" class="form-control" id="cooperateoccupants" />
           </div>
           <button type="button" class="btn btn-primary" id="cooperatesubmit">
             Submit
           </button>
         </div>
+       
+        </div>
         <!-- hybrid -->
+        <div class="row">
+        
         <div id="hy" style="display: none;" class="container col-md-4">
-          <div class="mb-3">
-            <label for="hybriddistinct" class="form-label"
-              >The number of distinct businesses
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of distinct businesses:</span>
+          </div>
+           
             <input type="number" class="form-control" id="hybriddistinct" />
           </div>
-          <div class="mb-3">
-            <label for="hybridfloors" class="form-label"
-              >The number of floors contained in the building, excluding
-              basements
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of floors contained in the building, excluding
+                basements:</span>
+          </div>
+           
             <input type="number" class="form-control" id="hybridfloors" />
           </div>
-          <div class="mb-3">
-            <label for="hybridbasement" class="form-label"
-              >The number of basements contained in the building
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of basements contained in the building:</span>
+          </div>
+           
             <input type="number" class="form-control" id="hybridbasement" />
           </div>
-          <div class="mb-3">
-            <label for="hybridparking" class="form-label"
-              >The number of parking spaces available
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of parking spaces available:</span>
+          </div>
+           
             <input type="number" class="form-control" id="hybridparking" />
           </div>
-          <div class="mb-3">
-            <label for="hybridoccupants" class="form-label"
-              >The maximum number of occupants per floor
-            </label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The maximum number of occupants per floor:</span>
+          </div>
+           
             <input type="number" class="form-control" id="hybridoccupants" />
           </div>
-          <div class="mb-3">
-            <label for="hybridhours" class="form-label"
-              >The number of hours of activity of the building (the maximum
-              being 24)
-            </label>
-            <input type="number" class="form-control" id="hybridhours" />
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" >The number of hours of activity of the building (the maximum
+                being 24):</span>
+          </div>
+          <input type="number" class="form-control" id="hybridhours" />
           </div>
           <button type="submit" class="btn btn-primary" id="hybridsubmit">
             Submit
           </button>
         </div>
-
-        <h2 class="container col-md-4">
-          Please select your productline:
-        </h2>
-
-        <div
-          role="controlgroup"
-          style="font-size: xx-large; height: 10vh;"
-          class="container col-md-4"
-        >
-          <div class="row">
-            <div
-              class="mb-10 col-md-4"
-              style="
-                text-align: center;
-                width: 15vw;
-                margin: auto;
-                font-size: xx-large;
-                height: 10vh;
-              "
+       
+      </div>
+      <div class="container col-md-4 text-center mb-30">
+        <h3 class="container col-md-4 text-center mt-30 mb-10">2 - Select your productline:</h3>
+        <div class="row">
+          <div class="mb-10 col-md-4" ></div>
+          <div class="mb-10 col-md-1" style="
+              text-align: center;
+              margin: auto;">
+            <input
+              type="radio"
+              id="Standard"
+              name="productlines"
+              onclick="funcPrice(7565, 0.1)"
+            />
+            <label for="Standard" style="display: inline;">Standard</label
             >
-              <input
-                type="radio"
-                id="Standard"
-                name="productlines"
-                onclick="funcPrice(7565, 0.1)"
-              />
-              <label for="Standard" style="display: inline;">Standard</label
-              >
-            </div>
-            <div
-              class="mb-10 col-md-4"
-              style="
-                text-align: center;
-                width: 15vw;
-                margin: auto;
-                font-size: xx-large;
-                height: 10vh;
-              "
-            >
-              <input
-                type="radio"
-                id="Premium"
-                name="productlines"
-                onclick="funcPrice(12345,0.13)"
-              />
-              <label for="Premium" style="display: inline;">Premium</label
-              >
-            </div>
-            <div
-              class="mb-10 col-md-4"
-              style="
-                text-align: center;
-                width: 15vw;
-                margin: auto;
-                font-size: xx-large;
-                height: 10vh;
-              "
-            >
-              <input
-                type="radio"
-                id="Excelium"
-                name="productlines"
-                onclick="funcPrice(15400,0.16)"
-              />
-              <label for="Excelium" style="display: inline;">Excelium</label>
-            </div>
           </div>
+          <div class="mb-10 col-md-1" style="
+              text-align: center;
+              margin: auto;">
+            <input
+              type="radio"
+              id="Premium"
+              name="productlines"
+              onclick="funcPrice(12345,0.13)"
+            />
+            <label for="Premium" style="display: inline;">Premium</label
+            >
+          </div>
+          <div
+            class="mb-10 col-md-1"
+            style="
+              text-align: center;
+              margin: auto;">
+            <input
+              type="radio"
+              id="Excelium"
+              name="productlines"
+              onclick="funcPrice(15400,0.16)"
+            />
+            <label for="Excelium" style="display: inline;">Excelium</label>
+            
+          </div>
+          <div class="mb-10 col-md-4" ></div>
+        <!-- <div class="container col-md-4 text-center">
+          <form>
+            <div class="mb-10 " style="
+                text-align: center;
+              ">
+              <input type="radio" id="Standard" name="productlines" onclick="funcPrice(7565, 0.1)" />
+              <label for="Standard" style="display:inline" >Standard</label>
+            </div>
+            <div class="mb-10" style="
+                text-align: center;
+                
+              ">
+              <input type="radio" id="Premium" name="productlines" onclick="funcPrice(12345,0.13)" />
+              <label for="Premium"style="display:inline" >Premium</label>
+            </div>
+            <div class="mb-10" style="
+                text-align: center;
+              ">
+              <input type="radio" id="Excelium" name="productlines" onclick="funcPrice(15400,0.16)" />
+              <label for="Excelium"style="display:inline" >Excelium</label>
+            </div>
+          </form>
+          </div> -->
+         
         </div>
+      </div>
+      <div class="row">
+        <div class="container col-md-4"></div>
+          <div class="container col-md-4">
+            <h3 style="text-align: center;">QUOTE DETAILS</h2>
+              <div class="row">
+              <div class="mb-10 col-md-6">
+                <label for="amount" class="form-label">The amount of elevators</label>
+                <input type="number" step="1" min="0" class="form-control" id="amount" placeholder="0" readonly />
+              </div>
+              <div class="input-group col-md-6 mb-3">
+                <label for="unitprice" class="form-label">The unit price of each elevator</label>
 
-        <div class="container col-md-4">
-          <h2 style="text-align: center;">QUOTE</h2>
-          <div class="row">
-            <div class="mb-10 col-md-6">
-              <label for="amount" class="form-label"
-                >The amount of elevators needed</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="amount"
-                placeholder="0"
-                readonly
-              />
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+               
+                <input type="number" class="form-control" id="unitprice" placeholder="0.00" readonly step="0.01" />
+              </div>
+              </div>
+           </div>
+           <div class="row">
+              <div class="mb-10 col-md-6">
+                <label for="totalprice" class="form-label">The total price of the elevators</label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                
+                <input type="bumber" class="form-control" id="totalprice" placeholder="0.00" readonly />
+              </div>
             </div>
-            <div class="mb-10 col-md-6">
-              <label for="unitprice" class="form-label"
-                >The unit price of each elevator</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="unitprice"
-                placeholder="0"
-                readonly
-              />
+              <div class="mb-10 col-md-6">
+                <label for="installation" class="form-label">The installation fees</label>
+                
+                <input type="text" step="0.01" class="form-control" id="installation" placeholder="0" readonly />
+              </div>
             </div>
+            
+              <div class="mb-10">
+                <label for="finalprice" class="form-label">The final price(include the price of elevators and
+                  installation fees) 
+                </label>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                
+                <input type="number" step="0.01" class="form-control" id="finalprice" placeholder="0.00" readonly />
+              </div>
+              </div>
+              <div  style="display:none">
+                <div class="mb-10">
+                  <label for="installationrate" class="form-label">The unit installation fees
+                  </label>
+                  
+                  <input type="number" class="form-control" id="installationrate" placeholder="0" readonly />
+                </div>
+              </div>
+            </div>
+            <div class="container col-md-4"></div>
           </div>
-          <div class="row">
-            <div class="mb-10 col-md-6">
-              <label for="totalprice" class="form-label"
-                >The total price of the elevators</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="totalprice"
-                placeholder="0"
-                readonly
-              />
-            </div>
-            <div class="mb-10 col-md-6">
-              <label for="installation" class="form-label"
-                >The installation fees</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="installation"
-                placeholder="0"
-                readonly
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="mb-10 col-md-6">
-              <label for="finalprice" class="form-label"
-                >The final price, combining the price of the elevators and the
-                installation fees
-              </label>
-              <input
-                type="text"
-                class="form-control"
-                id="finalprice"
-                placeholder="0"
-                readonly
-              />
-            </div>
-          </div>
-        </div>
+    </div>
+    
+  </div>
+  
       </form>
 
       <!-- FOOTER -->
@@ -578,24 +558,12 @@
               <!-- Newsletter Form -->
               <p>Subscribe to Our Newsletter to get Important News & Offers</p>
 
-              <form
-                class="validate"
-                action="php/newsletter.php"
-                method="post"
-                data-success="Subscribed! Thank you!"
-                data-toastr-position="bottom-right"
-              >
+              <form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!"
+                data-toastr-position="bottom-right">
                 <div class="input-group">
-                  <span class="input-group-addon"
-                    ><i class="fa fa-envelope"></i
-                  ></span>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="form-control required"
-                    placeholder="Enter your Email"
-                  />
+                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                  <input type="email" id="email" name="email" class="form-control required"
+                    placeholder="Enter your Email" />
                   <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">
                       Subscribe
@@ -646,5 +614,6 @@
     <!-- STYLESWITCHER - REMOVE -->
     <script async src="demo_files/styleswitcher/styleswitcher.js"></script>
     <script src="rocketelevatorsquote.js"></script>
-  </body>
+</body>
+
 </html>
