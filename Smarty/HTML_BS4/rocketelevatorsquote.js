@@ -17,31 +17,24 @@ const finalprice = document.getElementById("finalprice")
 const installationrate =document.getElementById("installationrate")
 //type listener
 residential.addEventListener('click',() =>  {
+    hidequestions()
     hint.style.display ="block"
     resi.style.display = 'block'
-    commer.style.display = 'none'
-    coop.style.display = 'none'
-    hy.style.display = 'none'
+
 })
 commercial.addEventListener('click',() =>  {
+    hidequestions()
     hint.style.display ="block"
-    resi.style.display = 'none'
     commer.style.display = 'block'
-    coop.style.display = 'none'
-    hy.style.display = 'none'
 })
 cooperate.addEventListener('click',() =>  {
+    hidequestions()
     hint.style.display ="block"
-    resi.style.display = 'none'
-    commer.style.display = 'none'
     coop.style.display = 'block'
-    hy.style.display = 'none'
 })
 hybrid.addEventListener('click',() =>  {
+    hidequestions()
     hint.style.display ="block"
-    resi.style.display = 'none'
-    commer.style.display = 'none'
-    coop.style.display = 'none'
     hy.style.display = 'block'
 })
 
@@ -52,16 +45,16 @@ const residentialfloors =document.getElementById("residentialfloors")
 const residentialbasement =document.getElementById("residentialbasement")
 const residentialsubmit = document.getElementById("residentialsubmit")
 residentialsubmit.addEventListener('click',() => {
-    
-    if (residentialfloors.value > 20){
+   if(residentialfloors.value > 20){
        amount.value = Math.ceil(Number(residentialapartment.value) / Number(residentialfloors.value) /6*2)
-    }else{
+    }else if(residentialfloors.value == 1){
+        amount.value = 0
+    }
+    else{
         amount.value = Math.ceil(Number(residentialapartment.value)/ Number(residentialfloors.value) /6)
     }  
-    totalprice.value = (Math.round(Number(unitprice.value)*Number(amount.value))).toFixed(2)
- 
-    finalprice.value =  (Math.round(Number(totalprice.value) + Number(amount.value) *Number(installationrate.value)*Number(unitprice.value))).toFixed(2)
-   
+    updateinput()
+  
 })
 //commercial
 const distinct = document.getElementById("distinct")
@@ -71,9 +64,8 @@ const commmercialparking = document.getElementById("commmercialparking")
 const cages = document.getElementById("cages")
 const commercialsubmit = document.getElementById("commercialsubmit")
 commercialsubmit.addEventListener('click',() => {
-    amount.value = cages.value 
-    totalprice.value = (Math.round(Number(unitprice.value)*Number(amount.value))).toFixed(2)
-    finalprice.value =  (Math.round(Number(totalprice.value) + Number(amount.value) *Number(installationrate.value)*Number(unitprice.value))).toFixed(2)
+    amount.value = Math.ceil(cages.value) 
+    updateinput()
 })
 
 //cooperate
@@ -86,22 +78,20 @@ const cooperatesubmit = document.getElementById("cooperatesubmit")
 
 cooperatesubmit.addEventListener('click',() => {
     amount.value =(Math.ceil(Number(cooperateoccupants.value)*(Number(cooperatefloors.value)+Number(cooperatebasement.value))/1000))
-    totalprice.value = (Math.round(Number(unitprice.value)*Number(amount.value))).toFixed(2)
-    finalprice.value =  (Math.round(Number(totalprice.value) + Number(amount.value) *Number(installationrate.value)*Number(unitprice.value))).toFixed(2)
+    updateinput()
 })
 //hybrid
-const hybriddistinct = Number(document.getElementById("hybriddistinct").value)
-const hybridfloors = Number(document.getElementById("hybridfloors").value)
-const hybridbasement = Number(document.getElementById("hybridbasement").value)
-const hybridparking = Number(document.getElementById("hybridparking").value)
-const hybridoccupants = Number(document.getElementById("hybridoccupants").value)
-const hybridhours = Number(document.getElementById("hybridhours").value)
+const hybriddistinct = document.getElementById("hybriddistinct")
+const hybridfloors = document.getElementById("hybridfloors")
+const hybridbasement = document.getElementById("hybridbasement")
+const hybridparking =document.getElementById("hybridparking")
+const hybridoccupants = document.getElementById("hybridoccupants")
+const hybridhours = document.getElementById("hybridhours")
 const hybridsubmit = document.getElementById("hybridsubmit")
 
 hybridsubmit.addEventListener('click',() => {
     amount.value = (Math.ceil(Number(hybridoccupants.value)*(Number(hybridfloors.value)+Number(hybridbasement.value))/1000))
-    totalprice.value = (Math.round(Number(unitprice.value)*Number(amount.value))).toFixed(2)
-    finalprice.value =  (Math.round(Number(totalprice.value) + Number(amount.value) *Number(installationrate.value)*Number(unitprice.value))).toFixed(2)
+    updateinput()
 })
 
 
@@ -110,13 +100,18 @@ hybridsubmit.addEventListener('click',() => {
 function funcPrice(product,installrate){
     unitprice.value =  (Math.round(product).toFixed(2))
     installation.value = (Number(installrate) * 100) + "%"
-    // totalprice.value =  formatter.format(Math.round(Number(unitprice.value)*Number(amount.value)))
-    // finalprice.value =  Math.round(Number(totalprice.value) + Number(amount.value) * Number(installation.value)*Number(unitprice.value))
-    totalprice.value = (Math.round(Number(unitprice.value)*Number(amount.value))).toFixed(2)
     installationrate.value =  Number(installrate)
-    finalprice.value =  (Math.round(Number(totalprice.value) + Number(amount.value) *Number(installationrate.value)*Number(unitprice.value))).toFixed(2)
-   
-    // document.getElementById("installation").innerHTML = unitinstallation*amount
-    // document.getElementById("finalprice").innerHTML = (unitprice + unitinstallation) * amount
+    updateinput()
 }
 
+function updateinput(){
+    totalprice.value = (Math.round(Number(unitprice.value)*Number(amount.value))).toFixed(2)
+    finalprice.value =  (Math.round(Number(totalprice.value) + Number(amount.value) *Number(installationrate.value)*Number(unitprice.value))).toFixed(2)
+}
+function hidequestions(){
+    hint.style.display ='none'
+    resi.style.display = 'none'
+    commer.style.display = 'none'
+    coop.style.display = 'none'
+    hy.style.display = 'none'
+}

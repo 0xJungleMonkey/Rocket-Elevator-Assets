@@ -54,7 +54,8 @@
 		data-background="assets/images/_smarty/boxed_background/1.jpg"
 	-->
 
-<body class="smoothscroll enable-animation">
+<body class="smoothscroll enable-animation" style="text-align: center;
+margin:auto;">
   <!-- wrapper -->
   <div id="wrapper">
     <!-- 
@@ -204,7 +205,7 @@
         </div>
         
       </div> -->
-      <div class="container col-md-4 text-center">
+      <div class="container col-md-4 text-center mb-10">
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-primary ml-3 mr-3" id="residential">Residential</button>
         <button type="button" class="btn btn-primary ml-3 mr-3"  id="commercial">Commercial</button>
@@ -213,7 +214,7 @@
 
       </div>
     
-     <div class="mb-30 mt-30"></div>
+     
       <!-- <div class="btn-group mt-0" role="group">
         <button type="button" class="btn btn-primary ">Residential</button>
         <button type="button" class="btn btn-primary ">Commercial</button>
@@ -222,7 +223,7 @@
 
       </div> -->
       </div>
-      <div class="row">
+      <div class="row"  >
       <label class="container col-md-4" id="hint" style="display: none;">
         Please text in your project detail:
       </label>
@@ -233,14 +234,14 @@
         <div class="container col-md-4" id="resi" style="display: none;" >
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">The number of apartments in the building:<br></span>
+              <span class="input-group-text" >The number of apartments in the building:<br></span>
             </div>
             <!-- <label for="residentialapartment" class="form-label">The number of apartments in the building</label> -->
             <input type="number" class="form-control" id="residentialapartment" />
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">The number of floors contained in the building,
+              <span class="input-group-text" >The number of floors contained in the building,
                 excluding
                 basements:<br></span>
             </div>
@@ -258,7 +259,6 @@
             <input type="number" class="form-control" id="residentialbasement" />
           </div>
           <div class="col text-center">
-
           <button type="button" class="btn btn-primary " id="residentialsubmit">
             Submit
           </button>
@@ -302,9 +302,10 @@
           </div>
             <input type="number" class="form-control" id="cages" />
           </div>
+          <div class="col text-center">
           <button type="button" class="btn btn-primary" id="commercialsubmit">
             Submit
-          </button>
+          </button></div>
         </div>
       </div>
         <!-- cooperate -->
@@ -345,14 +346,17 @@
           </div>
             <input type="number" class="form-control" id="cooperateoccupants" />
           </div>
+          <div class="col text-center">
           <button type="button" class="btn btn-primary" id="cooperatesubmit">
             Submit
           </button>
         </div>
-       
         </div>
+        </div>
+       
+        
         <!-- hybrid -->
-        <div class="row">
+        <div class="row ">
         
         <div id="hy" style="display: none;" class="container col-md-4">
           <div class="input-group mb-3">
@@ -398,15 +402,18 @@
           </div>
           <input type="number" class="form-control" id="hybridhours" />
           </div>
+          <div class="col text-center">
+   
           <button type="submit" class="btn btn-primary" id="hybridsubmit">
             Submit
           </button>
+        </div>
         </div>
        
       </div>
       <div class="container col-md-4 text-center mb-30">
         <h3 class="container col-md-4 text-center mt-30 mb-10">2 - Select your productline:</h3>
-        <div class="row">
+        <div class="row ">
           <div class="mb-10 col-md-4" ></div>
           <div class="mb-10 col-md-1" style="
               text-align: center;
@@ -476,7 +483,7 @@
       <div class="row">
         <div class="container col-md-4"></div>
           <div class="container col-md-4">
-            <h3 style="text-align: center;">QUOTE DETAILS</h2>
+            <h3 style="text-align: center;">Quote Details</h3>
               <div class="row">
               <div class="mb-10 col-md-6">
                 <label for="amount" class="form-label">The amount of elevators</label>
