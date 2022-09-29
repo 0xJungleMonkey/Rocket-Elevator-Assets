@@ -1,5 +1,6 @@
 
-//input constiables
+
+//type button listener
 /////////////////////////////////////////////////////////////////
 
 const residential = document.getElementById("residential")
@@ -7,15 +8,7 @@ const commercial = document.getElementById("commercial")
 const cooperate = document.getElementById("cooperate")
 const hybrid = document.getElementById("hybrid")
 const hint=document.getElementById("hint")
-//output constiables
-/////////////////////////////////////////////////////////////////
-const amount = document.getElementById("amount")
-const unitprice = document.getElementById("unitprice")
-const totalprice = document.getElementById("totalprice")
-const installation = document.getElementById("installation")
-const finalprice = document.getElementById("finalprice")
-const installationrate =document.getElementById("installationrate")
-//type listener
+
 residential.addEventListener('click',() =>  {
     hidequestions()
     hint.style.display ="block"
@@ -37,6 +30,14 @@ hybrid.addEventListener('click',() =>  {
     hint.style.display ="block"
     hy.style.display = 'block'
 })
+
+function hidequestions(){
+    hint.style.display ='none'
+    resi.style.display = 'none'
+    commer.style.display = 'none'
+    coop.style.display = 'none'
+    hy.style.display = 'none'
+}
 
 
 //residential
@@ -96,6 +97,14 @@ hybridsubmit.addEventListener('click',() => {
 
 
 
+//output constiables
+/////////////////////////////////////////////////////////////////
+const amount = document.getElementById("amount")
+const unitprice = document.getElementById("unitprice")
+const totalprice = document.getElementById("totalprice")
+const installation = document.getElementById("installation")
+const finalprice = document.getElementById("finalprice")
+const installationrate =document.getElementById("installationrate")
 
 function funcPrice(product,installrate){
     unitprice.value =  (Math.round(product).toFixed(2))
@@ -107,11 +116,4 @@ function funcPrice(product,installrate){
 function updateinput(){
     totalprice.value = (Math.round(Number(unitprice.value)*Number(amount.value))).toFixed(2)
     finalprice.value =  (Math.round(Number(totalprice.value) + Number(amount.value) *Number(installationrate.value)*Number(unitprice.value))).toFixed(2)
-}
-function hidequestions(){
-    hint.style.display ='none'
-    resi.style.display = 'none'
-    commer.style.display = 'none'
-    coop.style.display = 'none'
-    hy.style.display = 'none'
 }
