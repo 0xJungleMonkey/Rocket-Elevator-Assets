@@ -1,46 +1,41 @@
-//type button listener
-/////////////////////////////////////////////////////////////////
+const express = require('express')
+const app = express()
+const port = 3000
 
-const residential = document.getElementById("residential");
-const commercial = document.getElementById("commercial");
-const cooperate = document.getElementById("cooperate");
-const hybrid = document.getElementById("hybrid");
-const hint = document.getElementById("hint");
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-residential.addEventListener("click", () => {
-  hideQuestions();
-  hint.style.display = "block";
-  resi.style.display = "block";
-});
-commercial.addEventListener("click", () => {
-  hideQuestions();
-  hint.style.display = "block";
-  commer.style.display = "block";
-});
-cooperate.addEventListener("click", () => {
-  hideQuestions();
-  hint.style.display = "block";
-  coop.style.display = "block";
-});
-hybrid.addEventListener("click", () => {
-  hideQuestions();
-  hint.style.display = "block";
-  hy.style.display = "block";
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+app.get('/', function (req, res) {
+    res.send('<html><body><h1>Hello World</h1></body></html>');
 });
 
-function hideQuestions() {
-  hint.style.display = "none";
-  resi.style.display = "none";
-  commer.style.display = "none";
-  coop.style.display = "none";
-  hy.style.display = "none";
-}
+app.post('/submit-data', function (req, res) {
+    res.send('POST Request');
+});
 
+app.put('/update-data', function (req, res) {
+    res.send('PUT Request');
+});
+
+app.delete('/delete-data', function (req, res) {
+    res.send('DELETE Request');
+});
+
+var server = app.listen(5000, function () {
+    console.log('Node server is running..');
+});
 //residential
 const residentialApartment = document.getElementById("residentialapartment");
 const residentialFloors = document.getElementById("residentialfloors");
 const residentialSubmit = document.getElementById("residentialsubmit");
-residentialSubmit.addEventListener("click",() => {
+residentialSubmit.addEventListener("click",resiFunction);
+
+function resiFunction(){
   if (residentialFloors.value > 20) {
     amount.value = Math.ceil(
       (Number(residentialApartment.value) /
@@ -49,10 +44,13 @@ residentialSubmit.addEventListener("click",() => {
   } else if (residentialFloors.value == 1) {
     amount.value = 0;
   } else {
-    amount.value = Math.ceil(Number(residentialApartment.value) / Number(residentialFloors.value) / 6);
+    amount.value = Math.ceil(
+      Number(residentialApartment.value) / Number(residentialFloors.value) / 6
+    );
   }
   updateInput();
-});
+}
+
 //commercial
 const distinct = document.getElementById("distinct");
 const commmercialFloors = document.getElementById("commmercialfloors");
